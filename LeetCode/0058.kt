@@ -13,3 +13,10 @@ class Solution {
         return length
     }
 }
+
+from leetcode:
+class Solution {
+    fun lengthOfLastWord(s: String): Int {
+        return s.trim { it <= ' ' }.length - s.trim { it <= ' ' }.lastIndexOf(" ") - 1
+    }
+}
