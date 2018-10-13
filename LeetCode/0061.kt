@@ -5,6 +5,7 @@
  * }
  */
 //转自：https://leetcode.com/problems/rotate-list/discuss/22715/Share-my-java-solution-with-explanation
+//https://blog.csdn.net/u012848330/article/details/52744738
 class Solution {
     fun rotateRight(head: ListNode?, n: Int): ListNode? {
         if (head == null || head!!.next == null) return head
