@@ -11,7 +11,7 @@ func fullJustify(words []string, maxWidth int) []string {
 
 	for !isLast {
 		words, temp, width, isLast = split(words, maxWidth)
-		res = append(res, combine(temp, width, maxWidth, isLast))
+		res = append(res, combine(temp, width, maxWidth, isLast))//append主要用于给某个切片（slice）追加元素
 	}
 
 	return res
