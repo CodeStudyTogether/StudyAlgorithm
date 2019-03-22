@@ -3,6 +3,7 @@ func mySqrt(x int) int {
 }
 
 //在有序数组中，找到最后一个小于等于给定值的数
+//https://studygolang.com/articles/16274
 func mySqrt2(x int) int {
     low, high := 0, x
     for low <= high {
