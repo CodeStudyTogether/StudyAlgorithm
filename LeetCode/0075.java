@@ -16,3 +16,19 @@ two-pass是一种找连通域的算法，只要对图做两次遍历，就能够
 First, iterate the array counting number of 0's, 1's, and 2's, then overwrite array with total number of 0's, then 1's and followed by 2's.
 Could you come up with a one-pass algorithm using only constant space?
   
+class Solution {
+    public void sortColors(int[] nums) {
+        if(nums.length > 1){
+            for(int i = 0; i < nums.length - 1; i++){
+                for(int j = 0; j < nums.length - 1 - i; j++){
+                    if(nums[j] > nums[j + 1]){
+                        int temp = nums[j];
+                        nums[j] = nums[j + 1];
+                        nums[j + 1] = temp;
+                    }
+                }
+            }
+        }
+    }
+}
+
