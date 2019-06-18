@@ -32,3 +32,23 @@ class Solution {
     }
 }
 
+如果只能扫一遍，很容易想到的就是左边存放0和1，右边存放2.两边往中间靠。
+class Solution {
+   public void sortColors(int[] nums) {
+		int j = 0, k = nums.length - 1;
+		for (int i = 0; i <= k; i++) {
+			// 遇到0和前面的交换
+			if (nums[i] == 0)
+				swap(nums, i, j++);
+			// 遇到2和后面的交换
+			else if (nums[i] == 2)
+				swap(nums, i--, k--);
+		}
+	}
+ 
+	private void swap(int[] nums, int i, int j) {
+		int t = nums[i];
+		nums[i] = nums[j];
+		nums[j] = t;
+	}
+}
