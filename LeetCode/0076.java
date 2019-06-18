@@ -1,6 +1,7 @@
 这道题给了我们一个原字符串S，还有一个目标字符串T，让我们在S中找到一个最短的子串，使得其包含了T中的所有的字母，并且限制了时间复杂度为 O(n)。
 https://www.cnblogs.com/springfor/p/3872559.html
 https://blog.csdn.net/zjkC050818/article/details/76098195
+查找key为字符串，value为数量，这是一种常见的算法思维
 
 class Solution {
     public String minWindow(String S, String T) {
