@@ -13,6 +13,7 @@ class Solution {
 https://blog.csdn.net/happyaaaaaaaaaaa/article/details/51602234
 
 排序好的东西找元素，优先考虑二分查找法
+这种题都要自己画个图（包括重复的情况）
 public class Solution {
     public boolean search(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
