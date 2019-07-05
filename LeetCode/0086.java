@@ -6,6 +6,7 @@ https://blog.csdn.net/mine_song/article/details/70545448
  *     int val;
  *     ListNode next;
  *     ListNode(int x) { val = x; }
+ 以一个数为分割，那么就新建两个容器，一个在左侧，一个在右侧，最后拼接。
  * }
  */
 class Solution {
