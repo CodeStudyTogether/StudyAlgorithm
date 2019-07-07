@@ -13,7 +13,7 @@ public class Solution {
             list.add(1);
             return list;
         }
-        List<Integer> grayM = grayCode(n - 1);
+        List<Integer> grayM = grayCode(n - 1);//递归
         List<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < Math.pow(2,n); i++) {//递归
             if (i < Math.pow(2, n-1)) { //前面一半的数字不变
@@ -25,5 +25,4 @@ public class Solution {
         }
         return list;
     }
- 
 }
