@@ -33,3 +33,5 @@ public class Solution {
     	return f[c.length-1];
     }
 }
+
+//https://blog.csdn.net/lucky_bo/article/details/52247939
