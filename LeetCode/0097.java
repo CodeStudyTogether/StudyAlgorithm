@@ -1,4 +1,6 @@
 //https://blog.csdn.net/cslbupt/article/details/53965440
+动态规划过程是：每次决策依赖于当前状态，又随即引起状态的转移。一个决策序列就是在变化的状态中产生出来的，所以，这种多阶段最优化决策解决问题的过程就称为动态规划。
+https://juejin.im/post/5a29d52cf265da43333e4da7
 
 public class Solution {
     public boolean isInterleave(String s1, String s2, String s3) {
