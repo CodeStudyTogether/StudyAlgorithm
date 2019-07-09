@@ -17,7 +17,7 @@ public class Solution {
             dp[i][0] = s1.substring(0, i).equals(s3.substring(0, i)) ? true : false;
         }
         //当s2不是empty，s1是empty时
-        for (int j = 0; j <= length2; j++){
+        for (int j = 0; j <= length2; j++){//一个一个比较是否完全一致
             dp[0][j] = s2.substring(0, j).equals(s3.substring(0, j)) ? true : false;
         }
         //当s1和s2都不是空时。有两种情况，一种是从（i-1,j）到达（i，j）位置，如果（i-1，j)已经是交叉的了，只需比较s1的第i个位置的元素与s3的第i+j个位置的元素是否相等；另一种情况同理。
