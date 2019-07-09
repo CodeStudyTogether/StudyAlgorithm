@@ -8,7 +8,7 @@ public class Solution {
         int length2 = s2.length();
         int length3 = s3.length();
         if (length1 + length2 != length3){
-            return false;
+            return false;//这种小判断可以大大提高程序速度
         }
         //声明一个二维数组dp[][];其中dp[i][j]表示s1在第个位置，s2在第j个位置，s3在遍历第i+j个位置。dp[0][0]为s1和s2都为空
         boolean[][] dp = new boolean[length1 + 1][length2 + 1];
