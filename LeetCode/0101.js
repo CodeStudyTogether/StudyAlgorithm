@@ -9,6 +9,7 @@
  * @param {TreeNode} root
  * @return {boolean}
  * 使用递归法（Recursive）解决。
+ * 一般涉及到树的问题都可以用递归来解决。
  */
 var isSame = function (left, right) {
     if (!left && !right) return true;
